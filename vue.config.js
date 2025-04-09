@@ -1,15 +1,9 @@
-// vue.config.js
-import webpack from 'webpack';
-
-export default {
+module.exports = {
+  publicPath: '/',
   configureWebpack: {
-    plugins: [
-      new webpack.DefinePlugin({
-        'process.env': {
-          NODE_ENV: JSON.stringify(process.env.NODE_ENV || 'development'),
-          // Add any other environment variables here if needed
-        }
-      })
-    ]
-  }
+    devServer: {
+      historyApiFallback: true, // Ensure history mode works for all routes
+    },
+  },
+  outputDir: 'dist', // Make sure the build output directory is correct
 };

@@ -53,7 +53,7 @@ export default {
 
 <style scoped>
 .projects-section {
-  padding: 40px 20px;
+padding: 70px 0px;
   background-color: #f9f9f9;
   text-align: center;
 }
