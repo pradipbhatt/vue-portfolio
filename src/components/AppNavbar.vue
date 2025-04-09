@@ -2,7 +2,7 @@
   <nav class="navbar">
     <div class="container">
       <div class="logo">
-        <a href="#hero">My Portfolio</a>
+        <a href="#hero" @click.prevent="scrollToSection('hero')">My Portfolio</a>
       </div>
       <button class="hamburger" @click="toggleMenu">
         <span class="line"></span>
@@ -10,10 +10,10 @@
         <span class="line"></span>
       </button>
       <ul :class="['nav-links', { 'nav-active': isMenuOpen }]">
-        <li><a href="#hero" @click="closeMenu">Home</a></li>
-        <li><a href="#about" @click="closeMenu">About</a></li>
-        <li><a href="#projects" @click="closeMenu">Projects</a></li>
-        <li><a href="#contact" @click="closeMenu">Contact</a></li>
+        <li><a href="#hero" @click.prevent="scrollToSection('hero')">Home</a></li>
+        <li><a href="#about" @click.prevent="scrollToSection('about')">About</a></li>
+        <li><a href="#projects" @click.prevent="scrollToSection('projects')">Projects</a></li>
+        <li><a href="#contact" @click.prevent="scrollToSection('contact')">Contact</a></li>
       </ul>
     </div>
   </nav>
@@ -33,6 +33,13 @@ export default {
     },
     closeMenu() {
       this.isMenuOpen = false;
+    },
+    scrollToSection(sectionId) {
+      const section = document.getElementById(sectionId);
+      if (section) {
+        section.scrollIntoView({ behavior: "smooth" });
+        this.closeMenu(); // Close the menu after clicking
+      }
     },
   },
 };
