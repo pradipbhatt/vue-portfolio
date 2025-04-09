@@ -28,21 +28,21 @@ export default {
           id: 1,
           title: "Notes App",
           description: "A simple notes app built with Vue and Firebase for real-time data storage.",
-          image: "https://via.placeholder.com/300x200?text=Notes+App",
+          image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFkmE30ebBCSja4JIXqifg6RtGZVS4PIctVA&s",
           skills: ["Vue", "Firebase", "CSS"],
         },
         {
           id: 2,
           title: "Weather App",
           description: "A weather app that fetches real-time weather data using the OpenWeatherMap API.",
-          image: "https://via.placeholder.com/300x200?text=Weather+App",
+          image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTqRAmyGUJ-NzUwJwpGq9YEiASH5Xssr0rTQ&s",
           skills: ["JavaScript", "API Integration", "CSS"],
         },
         {
           id: 3,
           title: "Portfolio Website",
           description: "A personal portfolio website to showcase projects and skills.",
-          image: "https://via.placeholder.com/300x200?text=Portfolio+Website",
+          image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkmPIsCjOY5XF2vAfwJBu7qn3Edu70yfrdhA&s",
           skills: ["HTML", "CSS", "Vue"],
         },
       ],
@@ -98,7 +98,7 @@ export default {
 
 .project-title {
   font-size: 1.5rem;
-  color: #007bff;
+  color: #485720;
   margin-bottom: 10px;
 }
 
@@ -117,7 +117,7 @@ export default {
 }
 
 .skill {
-  background-color: #007bff;
+  background-color: #485720;
   color: white;
   padding: 5px 10px;
   border-radius: 4px;
