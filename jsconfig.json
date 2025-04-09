@@ -1,6 +1,6 @@
 {
   "compilerOptions": {
-    "target": "es5",
+    "target": "esnext", // Use ESNext for modern JavaScript features
     "module": "esnext",
     "baseUrl": "./",
     "moduleResolution": "node",
@@ -14,6 +14,12 @@
       "dom",
       "dom.iterable",
       "scripthost"
-    ]
-  }
+    ],
+    "allowSyntheticDefaultImports": true, // Allow default imports for compatibility
+    "esModuleInterop": true // Enable interop between CommonJS and ES modules
+  },
+  "exclude": [
+    "node_modules", // Exclude node_modules to avoid conflicts
+    "dist" // Exclude build output directory
+  ]
 }
